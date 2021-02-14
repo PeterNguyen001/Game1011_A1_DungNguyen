@@ -34,14 +34,12 @@ public:
 	{
 		return m_age;
 	}
-
-	virtual void displayInfor() = 0;
 };
 
 inline Person::Person()
 {
-	getName();
-	getAge();
+	setName("");
+	setAge(0);
 }
 
 inline Person::Person(string name, int age)

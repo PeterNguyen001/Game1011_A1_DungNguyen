@@ -6,11 +6,11 @@ using namespace std;
 
 Student::Student()
 {
-	getName();
-	getAge();
-	getCollege();
-	getProgram();
-	getSemester();
+	setName("");
+	setAge(1);
+	setCollege("");
+	setProgram("");
+	setSemester(0);
 }
 
 Student::Student(string name, int age, string college, string program, int semester) : Person(name, age)
@@ -23,7 +23,7 @@ Student::Student(string name, int age, string college, string program, int semes
 NonGamingStudent::NonGamingStudent()
 {
 	setName("");
-	setAge(0);
+	setAge(1);
 	setCollege("");
 	setProgram("");
 	setSemester(0);

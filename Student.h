@@ -18,7 +18,7 @@ public:
 	{
 		m_college = college;
 	}
-	string getCollege()
+	virtual string getCollege() const
 	{
 		return m_college;
 	}
@@ -27,7 +27,7 @@ public:
 	{
 		m_program= program;
 	}
-	string getProgram()
+	virtual string getProgram() const
 	{
 		return m_program;
 	}
@@ -36,10 +36,12 @@ public:
 	{
 		m_semester = semester;
 	}
-	int getSemester()
+	virtual int getSemester() const
 	{
 		return m_semester;
 	}
+
+
 };
 
 class NonGamingStudent : public Student
@@ -67,6 +69,11 @@ public:
 	int getHours()
 	{
 		return m_hours;
+	}
+
+	bool IsGamer()
+	{
+		return false;
 	}
 };
 
@@ -96,4 +103,5 @@ public:
 	{
 		return m_hours;
 	}
+
 };
